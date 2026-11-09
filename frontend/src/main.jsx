@@ -182,7 +182,16 @@ function Main() {
       />
 
       <div id="infoLinks">
-        <h1><a href="https://github.com/erinkim789/Very-Small-Pet-Shop.git">Github</a></h1>
+        <h1>
+          <a
+            href="https://github.com/erinkim789/Very-Small-Pet-Shop"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </h1>
+        
         <h1><a>Resume</a></h1>
       </div>
     </section>
