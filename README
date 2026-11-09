@@ -1,0 +1,134 @@
+/// The Very Small Pet Shop ///
+
+The Very Small Pet Shop is a whimsical, interactive pet adoption experience where
+the pets choose you.
+
+Meet six fun and spirited pets, complete a personality questionaire, and see if
+your personality is compatible with theirs. Each pet has their own preferences,
+expectations, and dealbreakers (and might reject you based on them)!
+
+/// Features ///
+
+    - Interactive pet shop: Explore six unique pets, each with their own personality, 
+    profile, and preferences.
+
+    - Personality questionnaire: Complete a scenario-based questionnaire evaluating 
+    four personality traits: Sociability, Persistence, Patience, and Spontaneity.
+
+    - Compatibility engine: Receive personalized compatibility scores calculated using 
+    weighted personality comparisons.
+
+    - Dealbreaker system: Certain preferences are non-negotiable. A high compatibility 
+    score doesn't guarantee acceptance!
+
+    - Personality comparisons: Compare your personality traits against historical 
+    applicants using percentile calculations.
+
+    - Adoption experience: Adopt an accepting pet and bring your new companion home.
+
+    - Design: Custom illustrations, animated pet sprites, interactive profiles, and
+    transitions bring the experience to life.
+
+/// Compatiblity Engine ///
+
+Each pet has an ideal personality profile, individual trait weights, and unique 
+acceptance requirements.
+
+    - Personality scoring: Questionnaire responses contribute points to one or more 
+    personality traits.
+
+    - Normalization: Raw personality scores are normalized to a consistent 0–10 scale.
+
+    - Weighted compatibility: Each pet's ideal personality profile is compared against 
+    the applicant's profile, with trait weights determining the importance of each 
+    difference.
+
+    - Dealbreaker evaluation: Specific answers can trigger hard rejection conditions, 
+    regardless of the overall compatibility score.
+
+    - Acceptance decision: Each pet has its own acceptance threshold, producing 
+    individualized adoption decisions.
+
+/// Personality Percentiles ///
+
+Applicants can also see how their personality compares with previous applicants.
+
+The backend stores normalized personality scores in PostgreSQL and calculates 
+percentiles from historical application data. This allows applicants to see how 
+they rank across all four personality traits.
+
+Percentiles are calculated using database queries against previously submitted 
+applications rather than being stored as fixed values.
+
+/// Tech Stack ///
+
+Frontend
+    - React
+    - Javascript
+    - Vite
+    - CSS
+
+Backend
+    - Python
+    - FastAPI
+    - SQLAlchemy
+    - PostgreSQL
+
+/// Downloading the Project ///
+
+Prereqs
+
+    - Node.js and npm
+    - Python 3.10+
+    - PostgreSQL
+
+Clone the Repo
+
+    git clone https://github.com/erinkim789/Very-Small-Pet-Shop.git
+    cd very-small-pet-shop
+
+Configure Environmental Variables
+
+Frontend
+
+    Create frontend/.env: VITE_API_URL=http://localhost:8000 -> URL of the FastAPI backend
+
+Backend
+
+    Create backend/.env: DATABASE_URL=postgresql://username:password@localhost:5432/database_name -> Replaced the example credentials and database name with your backend configuration
+
+Set Up the Backend
+
+    Create and activate the virtual environment: 
+        - python -m venv .venv
+        - source .venv/bin/activate
+
+    Install backend dependencies: 
+        - pip install -r backend/requirements.txt
+
+Initialize the Database
+
+    Make sure your PostgreSQL server is running and the .env file is correctly set up for the backend
+
+    Run the database seeding script:
+        - python -m backend.seed_data
+
+    The seed script populates the data with sample historical applications. This is important for the personality
+    percentile comparisons to have existing applicant data to compare against
+
+Start the Backend
+
+    From the project root:
+        - uvicorn backend.application:app --reload
+    
+    The API will be available at http://localhost:8000
+
+Start the Frontend
+
+    Open a separate terminal:
+        - cd frontend
+        - npm install
+        - npm run dev
+
+    Vite will provide the local frontend URL in the terminal.
+
