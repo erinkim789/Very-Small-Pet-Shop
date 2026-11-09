@@ -1,0 +1,43 @@
+#applicationNextButton {
+    left: 2650px;
+    top: 3900px;
+}
+
+#questionIntro {
+    left: 1300px;
+    top: 1700px;
+    width: 2600px;
+    z-index: 2;
+    position: absolute;
+}
+
+#questionIntro h1 {
+    padding-bottom: 120px;
+    line-height: 160px;
+}
+
+#headerText {
+    left: 1350px;
+    top: 1000px;
+    width: 2500px;
+    z-index: 2;
+    position: absolute;
+    font-size: 115px;
+}
+
+#DialogueText {
+    display: block;
+    width: 4040px;
+    height: 620px;
+    left: 540px;
+    top: 4250px;
+    z-index: 3;
+}
+
+#questionContainer {
+    left: 1200px;
+    top: 1640px;
+    width: 2600px;
+    z-index: 2;
+    position: absolute;
+}

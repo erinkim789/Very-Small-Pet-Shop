@@ -1,0 +1,16 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.checkbox img {
+    width: 480px;
+    height: 480px;
+}
+
+.checkbox:hover {
+    transform: scale(1.15);
+}

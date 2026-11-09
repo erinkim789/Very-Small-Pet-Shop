@@ -1,0 +1,26 @@
+.DialogueText {
+    position: absolute;
+    z-index: 3;
+    font-size: 6.5rem;
+    padding-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.TypeLetter {
+    display: inline-block;
+    animation: typing 0.08s ease-out;
+}
+
+@keyframes typing {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

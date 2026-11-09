@@ -1,0 +1,18 @@
+#houseNextButton {
+  left: 3491px;
+  top: 3590px;
+}
+
+#houseDialogue {
+  left: 390px;
+  top: 4150px;
+}
+
+#houseDialogueText {
+  display: block;
+  width: 4040px;
+  height: 620px;
+  left: 540px;
+  top: 4250px;
+  z-index: 3;
+}

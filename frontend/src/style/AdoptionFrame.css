@@ -1,0 +1,85 @@
+.adoptionFrameContainer {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: scale(.9);
+    width: 1200px;
+}
+
+.adoptionFrameContainer:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* =========================
+   PICTURE
+   ========================= */
+
+.pictureFrameStack {
+    position: relative;
+
+    width: 1560px;
+    height: 1660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pictureFrame,
+#AcceptedStamp,
+#RejectedStamp,
+#petImage {
+    position: absolute;
+}
+
+#pictureFrame {
+    z-index: 2;
+}
+
+#petImage {
+    z-index: 3;
+    transform: scale(1.4);
+}
+
+#AcceptedStamp,
+#RejectedStamp {
+    z-index: 4;
+    transform: scale(.9);
+    opacity: 0.88;
+}
+
+
+/* =========================
+   PLAQUE
+   ========================= */
+
+.plaqueContainer {
+    position: relative;
+
+    width: 1580px;
+    height: 740px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px;
+}
+
+#Plaque {
+    position: absolute;
+    z-index: 2;
+}
+
+.plaqueContainer h2 {
+    z-index: 3;
+    text-align: center;
+    width: 1400px;
+    position: absolute;
+    font-size: 100px;
+    line-height: 1;
+}

@@ -1,0 +1,31 @@
+.Loading {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 10rem;
+}
+
+.LoadingText {
+    white-space: nowrap;
+}
+
+.LoadingLetter {
+    display: inline-block;
+    animation: loadingBounce 0.6s ease-in-out infinite;
+    color: white;
+}
+
+@keyframes loadingBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}

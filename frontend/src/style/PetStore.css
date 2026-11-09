@@ -1,0 +1,68 @@
+#Biscuit,
+#Geraldine,
+#Greg,
+#Kevin,
+#Momo,
+#Pickle{
+  position: absolute;
+  z-index: 2;
+  transition: transform 0.15s ease;
+}
+
+#Biscuit:hover,
+#Geraldine:hover,
+#Greg:hover,
+#Kevin:hover,
+#Momo:hover,
+#Pickle:hover{
+  transform: scale(1.15) translateY(25px);
+}
+
+
+#Biscuit {
+  left: 1260px;
+  top: 1780px;
+}
+
+#Geraldine {
+  left: 2750px;
+  top: 1740px;
+}
+
+#Greg {
+  left: 4100px;
+  top: 1810px;
+}
+
+#Kevin {
+  left: 530px;
+  top: 3330px;
+}
+
+#Momo {
+  left: 2000px;
+  top: 3280px;
+}
+
+#Pickle {
+  left: 3440px;
+  top: 3260px;
+}
+
+#PetStoreDialogue {
+  left: 425px;
+  top: 4450px;
+}
+
+#PetStoreDialogueText {
+  display: block;
+  width: 2520px;
+  height: 420px;
+  left: 575px;
+  top: 4520px;
+}
+
+#adoptButton {
+  left: 3506px;
+  top: 4450px;
+}
