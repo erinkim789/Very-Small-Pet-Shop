@@ -192,7 +192,14 @@ function Main() {
           </a>
         </h1>
         
-        <h1><a>Resume</a></h1>
+        <h1>
+          <a
+            href="/assets/Resume_ErinKim.pdf"
+            download="Erin_Kim_Resume.pdf"
+          >
+            Resume
+          </a>
+        </h1>
       </div>
     </section>
   )
