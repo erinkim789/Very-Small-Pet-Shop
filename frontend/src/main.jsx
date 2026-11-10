@@ -9,6 +9,7 @@ import Application from './pages/Application.jsx'
 import Adoption from './pages/Adoption.jsx'
 import AdoptionProfile from './pages/AdoptionProfile.jsx'
 import AdoptionResults from './pages/AdoptionResults.jsx'
+import Resume from './assets/Resume_ErinKim.pdf'
 
 // Main component that handles the overall layout and state management for the pet shop application. Main controls
 // switching between different pages and managing the state for pet profiles, applications, and adoption results.
@@ -194,7 +195,7 @@ function Main() {
         
         <h1>
           <a
-            href="/assets/Resume_ErinKim.pdf"
+            href={Resume}
             download="Erin_Kim_Resume.pdf"
           >
             Resume
